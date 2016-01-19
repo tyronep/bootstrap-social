@@ -7,6 +7,22 @@
  * https://github.com/lipis/bootstrap-social
  */
 
+// Bootstrap v4 default font size
+$font-size-base: 16px;
+
+// Bootstrap v3 defaults from https://github.com/twbs/bootstrap/blob/master/less/variables.less
+// PL: https://github.com/twbs/bootstrap/blob/98b9ff6b7ad3f3d37670f748363736fe4e91fafd/less/variables.less
+$font-size-large: ceil(($font-size-base * 1.25));
+$font-size-small: ceil(($font-size-base * 0.85));
+$padding-base-horizontal: 12px;
+$padding-base-vertical: 6px;
+$padding-small-horizontal: 10px;
+$padding-small-vertical: 5px;
+$padding-large-horizontal: 16px;
+$padding-large-vertical: 10px;
+$line-height-base: 1.428571429;
+$line-height-computed: floor(($font-size-base * $line-height-base));
+
 $bs-height-base: ($line-height-computed + $padding-base-vertical * 2);
 $bs-height-lg:   (floor($font-size-large * $line-height-base) + $padding-large-vertical * 2);
 $bs-height-sm:   (floor($font-size-small * 1.5) + $padding-small-vertical * 2);
@@ -93,6 +109,7 @@ $bs-height-xs:   (floor($font-size-small * 1.2) + $padding-small-vertical + 1);
 
 
 .btn-adn           { @include btn-social(#d87a68); }
+.btn-amazon        { @include btn-social(#fd9600); }
 .btn-bitbucket     { @include btn-social(#205081); }
 .btn-dropbox       { @include btn-social(#1087dd); }
 .btn-facebook      { @include btn-social(#3b5998); }
